@@ -1,0 +1,14 @@
+<div class="border">
+  <div class="d-flex justify-content-between container my-3">
+    <%= link_to 'Wikinimous', articles_path %>
+    <p>New Article</p>
+  </div>
+</div>
+
+<div class="container">
+  <ul>
+    <% @articles.each do |article| %>
+      <li><%= article.title %></li>
+    <% end %>
+  </ul>
+</div>
